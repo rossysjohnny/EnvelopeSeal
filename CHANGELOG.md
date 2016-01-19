@@ -20,3 +20,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [0.9.0] - 2025-06-24
 
 ### Added
+
+- `blast` subcommand ranking keys by the number of data keys reachable below
+  them.
+- Rotation status against an explicit as-of date, with an exempt interval of 0.
+
