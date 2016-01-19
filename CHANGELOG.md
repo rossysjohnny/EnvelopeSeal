@@ -30,3 +30,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - Strength inversion detection: a wrap that maps a stronger key onto a weaker
+  one is flagged with both sides quoted.
+
+## [0.7.0] - 2023-04-18
+
+### Added
