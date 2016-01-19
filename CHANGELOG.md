@@ -25,3 +25,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   them.
 - Rotation status against an explicit as-of date, with an exempt interval of 0.
 
+## [0.8.0] - 2024-05-28
+
+### Added
+
+- Strength inversion detection: a wrap that maps a stronger key onto a weaker
