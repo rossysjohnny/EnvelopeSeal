@@ -40,3 +40,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   family.
 - `--as-of` is required for rotation checks; a missing date is a usage error.
 
+## [0.6.0] - 2022-02-08
+
+### Added
+
+- JSON report with fixed keys, including per-key wrap counts and depths.
