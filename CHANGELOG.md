@@ -45,3 +45,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - JSON report with fixed keys, including per-key wrap counts and depths.
+- `validate` and `rotation` subcommands.
+
+## [0.5.0] - 2020-12-15
+
+### Added
