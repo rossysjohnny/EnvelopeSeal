@@ -64,3 +64,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [0.3.0] - 2017-12-19
 
 ### Added
+
+- Rotation window rules with configurable intervals.
+- Strict validation for key ids, algorithms and wrap records.
+
+## [0.2.0] - 2016-10-11
