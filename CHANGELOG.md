@@ -59,3 +59,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - Wrap graph construction with per-key in and out degree.
+- Orphan detection: wrapped keys with no encrypting key above them.
+
+## [0.3.0] - 2017-12-19
+
+### Added
