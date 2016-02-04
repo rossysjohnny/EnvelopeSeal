@@ -54,3 +54,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Depth-first cycle detection over the wrap graph with the cycle path printed.
 - Manifest parser for line oriented key and wrap records.
 
+## [0.4.0] - 2019-01-22
+
+### Added
+
+- Wrap graph construction with per-key in and out degree.
