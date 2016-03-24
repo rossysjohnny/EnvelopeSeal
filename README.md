@@ -84,3 +84,16 @@ key <id> <role> <algorithm> <bits> <created> <rotation_days>
 | `algorithm`     | Algorithm token, for example `AES-GCM` or `RSA-OAEP`.          |
 | `bits`          | Declared key or modulus size in bits.                          |
 | `created`       | ISO date `YYYY-MM-DD` the key was created.                     |
+| `rotation_days` | Days until rotation is due. `0` means exempt, never overdue.   |
+
+A wrap record declares one directed edge:
+
+```
+wrap <wrapping_key_id> <wrapped_key_id>
+```
+
+meaning the first key encrypts the second. Parsing is strict. A record with the
+wrong field count, an unknown role, a duplicate id, or a malformed date raises an
+error that names the line number, and the tool exits with code 2.
+
+## Install and run
