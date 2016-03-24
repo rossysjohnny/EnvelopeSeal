@@ -97,3 +97,16 @@ wrong field count, an unknown role, a duplicate id, or a malformed date raises a
 error that names the line number, and the tool exits with code 2.
 
 ## Install and run
+
+The package is pure standard library and targets Python 3.11. There are no
+runtime dependencies to install. You can run it straight from the source tree by
+putting `src` on the path:
+
+```
+PYTHONPATH=src python -m envelopeseal version
+```
+
+or install it so the `envelopeseal` command is on your path:
+
+```
+pip install .
