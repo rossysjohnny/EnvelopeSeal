@@ -71,3 +71,16 @@ The manifest is a line-oriented text file. It has two record kinds and ignores
 blank lines and lines that start with `#`. Fields are separated by whitespace,
 so you can align columns for readability.
 
+A key record declares one key:
+
+```
+key <id> <role> <algorithm> <bits> <created> <rotation_days>
+```
+
+| Field           | Meaning                                                        |
+| --------------- | -------------------------------------------------------------- |
+| `id`            | Unique key identifier, any non-whitespace token.               |
+| `role`          | `dek` for a data key or `kek` for a key encrypting key.        |
+| `algorithm`     | Algorithm token, for example `AES-GCM` or `RSA-OAEP`.          |
+| `bits`          | Declared key or modulus size in bits.                          |
+| `created`       | ISO date `YYYY-MM-DD` the key was created.                     |
