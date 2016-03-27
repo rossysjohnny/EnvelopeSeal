@@ -110,3 +110,16 @@ or install it so the `envelopeseal` command is on your path:
 
 ```
 pip install .
+envelopeseal version
+```
+
+The examples below use the `PYTHONPATH=src` form because that is how the output
+in this README was captured.
+
+## The checks
+
+`validate` runs five checks over the manifest. Each produces zero or more
+findings, and each finding carries a stable code so the output greps and diffs
+cleanly.
+
+| Code           | Question it answers                                             |
