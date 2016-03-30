@@ -149,3 +149,16 @@ function of a date, and the tool never reads the wall clock. Passing the date
 explicitly is what makes a run reproducible: the same manifest and the same date
 always produce the same bytes.
 
+## Output format
+
+Every report starts with a header line naming the subcommand, then a few count
+lines, then one line per item. The `validate` header reports the key count, the
+wrap count, the as-of date, and the finding count.
+
+The command below was run against the healthy sample and captured verbatim:
+
+```
+$ PYTHONPATH=src python -m envelopeseal validate samples/healthy.manifest --as-of 2026-09-02
+envelopeseal validate
+keys 7
+wraps 6
