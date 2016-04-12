@@ -175,3 +175,16 @@ $ PYTHONPATH=src python -m envelopeseal validate samples/broken.manifest --as-of
 envelopeseal validate
 keys 8
 wraps 4
+as-of 2026-09-02
+findings 6
+cycle loop-a: wrap cycle: loop-a -> loop-b -> loop-a
+inversion weak-wrapper->dek-strong: weak-wrapper (RSA-OAEP 2048 (level 112)) is weaker than dek-strong (AES-GCM 256 (level 256))
+missing-wrap dek-uncovered: data key is wrapped by no key encrypting key
+orphan dek-uncovered: key protects nothing and is protected by nothing
+orphan lonely-kek: key protects nothing and is protected by nothing
+overdue dek-stale: due 2026-01-31, 214 days overdue as of 2026-09-02
+```
+
+## A worked walkthrough
+
+The healthy sample is a three level hierarchy. The diagram below is drawn from
