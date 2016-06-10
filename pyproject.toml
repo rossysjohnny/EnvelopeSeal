@@ -9,3 +9,5 @@ description = "Offline auditor for an envelope encryption key hierarchy."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
+authors = [{ name = "the envelopeseal authors" }]
+keywords = ["envelope-encryption", "kek", "dek", "key-wrapping", "audit"]
