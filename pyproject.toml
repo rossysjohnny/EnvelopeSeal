@@ -12,3 +12,5 @@ license = { text = "MIT" }
 authors = [{ name = "the envelopeseal authors" }]
 keywords = ["envelope-encryption", "kek", "dek", "key-wrapping", "audit"]
 
+[project.scripts]
+envelopeseal = "envelopeseal.cli:main"
