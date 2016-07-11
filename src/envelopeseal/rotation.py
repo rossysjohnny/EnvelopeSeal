@@ -24,3 +24,9 @@ class RotationStatus:
 
     key_id: str
     created: datetime.date
+    rotation_days: int
+    due_date: "datetime.date | None"
+    as_of: datetime.date
+
+    @property
+    def exempt(self) -> bool:
