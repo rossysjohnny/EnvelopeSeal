@@ -30,3 +30,9 @@ class RotationStatus:
 
     @property
     def exempt(self) -> bool:
+        return self.rotation_days == 0
+
+    @property
+    def overdue(self) -> bool:
+        if self.exempt or self.due_date is None:
+            return False
