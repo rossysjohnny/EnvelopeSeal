@@ -49,3 +49,9 @@ def status_for(key: Key, as_of: datetime.date) -> RotationStatus:
     """Compute the rotation status of one key."""
 
     if key.rotation_days == 0:
+        due = None
+    else:
+        due = key.created + datetime.timedelta(days=key.rotation_days)
+    return RotationStatus(
+        key_id=key.key_id,
+        created=key.created,
