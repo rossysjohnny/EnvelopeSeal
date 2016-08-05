@@ -55,3 +55,9 @@ def status_for(key: Key, as_of: datetime.date) -> RotationStatus:
     return RotationStatus(
         key_id=key.key_id,
         created=key.created,
+        rotation_days=key.rotation_days,
+        due_date=due,
+        as_of=as_of,
+    )
+
+
