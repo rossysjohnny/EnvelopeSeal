@@ -17,3 +17,8 @@ compares.
 
 from __future__ import annotations
 
+from envelopeseal.manifest import Key
+
+
+# Family of an algorithm decides how its declared bits map to a security level.
+# "symmetric" means the key size is the security level directly.
