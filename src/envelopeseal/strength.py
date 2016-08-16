@@ -34,3 +34,9 @@ _MODULUS_LEVELS = {
     3072: 128,
     7680: 192,
     15360: 256,
+}
+
+
+class StrengthError(ValueError):
+    """Raised when a key's algorithm or size cannot be scored."""
+
