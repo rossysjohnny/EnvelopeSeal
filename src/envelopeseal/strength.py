@@ -51,3 +51,9 @@ def security_level(key: Key) -> int:
 
     algo = key.algorithm.upper()
     if algo in _SYMMETRIC:
+        return key.bits
+    if algo in _MODULUS:
+        level = _MODULUS_LEVELS.get(key.bits)
+        if level is None:
+            raise StrengthError(
+                f"key {key.key_id!r}: modulus size {key.bits} for {key.algorithm} "
