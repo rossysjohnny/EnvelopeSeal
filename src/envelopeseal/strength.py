@@ -57,3 +57,9 @@ def security_level(key: Key) -> int:
         if level is None:
             raise StrengthError(
                 f"key {key.key_id!r}: modulus size {key.bits} for {key.algorithm} "
+                f"is not in the mapped set {sorted(_MODULUS_LEVELS)}"
+            )
+        return level
+    raise StrengthError(
+        f"key {key.key_id!r}: unknown algorithm {key.algorithm!r}"
+    )
