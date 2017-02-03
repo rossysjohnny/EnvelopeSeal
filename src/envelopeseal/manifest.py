@@ -23,3 +23,13 @@ Blank lines and lines beginning with "#" are ignored. Fields are separated by
 runs of whitespace. Parsing is strict: a malformed line raises ManifestError
 naming the line number.
 """
+
+from __future__ import annotations
+
+import datetime
+from dataclasses import dataclass, field
+from typing import List
+
+
+ROLE_DEK = "dek"
+ROLE_KEK = "kek"
