@@ -43,3 +43,13 @@ class ManifestError(ValueError):
 @dataclass(frozen=True)
 class Key:
     """A single key declared in the manifest."""
+
+    key_id: str
+    role: str
+    algorithm: str
+    bits: int
+    created: datetime.date
+    rotation_days: int
+
+    @property
+    def is_data_key(self) -> bool:
