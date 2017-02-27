@@ -63,3 +63,13 @@ class Key:
 @dataclass(frozen=True)
 class Wrap:
     """A directed wrap edge: wrapping_key protects wrapped_key."""
+
+    wrapping_key: str
+    wrapped_key: str
+
+
+@dataclass
+class Manifest:
+    """A parsed manifest: keys keyed by id, plus wrap edges in file order."""
+
+    keys: "dict[str, Key]" = field(default_factory=dict)
