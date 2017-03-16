@@ -73,3 +73,13 @@ class Manifest:
     """A parsed manifest: keys keyed by id, plus wrap edges in file order."""
 
     keys: "dict[str, Key]" = field(default_factory=dict)
+    wraps: List[Wrap] = field(default_factory=list)
+
+    def key_ids(self) -> List[str]:
+        return list(self.keys.keys())
+
+
+def _parse_date(token: str, lineno: int) -> datetime.date:
+    try:
+        return datetime.date.fromisoformat(token)
+    except ValueError as exc:
