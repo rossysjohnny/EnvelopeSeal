@@ -103,3 +103,13 @@ def _parse_int(token: str, lineno: int, what: str) -> int:
 def parse_text(text: str) -> Manifest:
     """Parse manifest text into a Manifest, raising ManifestError on any fault."""
 
+    manifest = Manifest()
+    for raw_lineno, raw in enumerate(text.splitlines(), start=1):
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        parts = line.split()
+        kind = parts[0]
+        if kind == "key":
+            if len(parts) != 7:
+                raise ManifestError(
