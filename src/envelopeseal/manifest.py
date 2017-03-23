@@ -93,3 +93,13 @@ def _parse_int(token: str, lineno: int, what: str) -> int:
         value = int(token)
     except ValueError as exc:
         raise ManifestError(
+            f"line {lineno}: invalid {what} {token!r}, expected an integer"
+        ) from exc
+    if value < 0:
+        raise ManifestError(f"line {lineno}: {what} may not be negative")
+    return value
+
+
+def parse_text(text: str) -> Manifest:
+    """Parse manifest text into a Manifest, raising ManifestError on any fault."""
+
