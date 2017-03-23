@@ -123,3 +123,13 @@ def parse_text(text: str) -> Manifest:
                     f"line {raw_lineno}: unknown role {role!r}, "
                     f"expected one of {', '.join(_ROLES)}"
                 )
+            if key_id in manifest.keys:
+                raise ManifestError(
+                    f"line {raw_lineno}: duplicate key id {key_id!r}"
+                )
+            key = Key(
+                key_id=key_id,
+                role=role,
+                algorithm=algorithm,
+                bits=_parse_int(bits_s, raw_lineno, "bits"),
+                created=_parse_date(created_s, raw_lineno),
