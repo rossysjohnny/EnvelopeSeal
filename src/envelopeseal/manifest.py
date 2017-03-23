@@ -83,3 +83,13 @@ def _parse_date(token: str, lineno: int) -> datetime.date:
     try:
         return datetime.date.fromisoformat(token)
     except ValueError as exc:
+        raise ManifestError(
+            f"line {lineno}: invalid date {token!r}, expected YYYY-MM-DD"
+        ) from exc
+
+
+def _parse_int(token: str, lineno: int, what: str) -> int:
+    try:
+        value = int(token)
+    except ValueError as exc:
+        raise ManifestError(
