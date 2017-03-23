@@ -113,3 +113,13 @@ def parse_text(text: str) -> Manifest:
         if kind == "key":
             if len(parts) != 7:
                 raise ManifestError(
+                    f"line {raw_lineno}: key record needs 6 fields "
+                    f"(id role algorithm bits created rotation_days), "
+                    f"got {len(parts) - 1}"
+                )
+            _, key_id, role, algorithm, bits_s, created_s, rot_s = parts
+            if role not in _ROLES:
+                raise ManifestError(
+                    f"line {raw_lineno}: unknown role {role!r}, "
+                    f"expected one of {', '.join(_ROLES)}"
+                )
