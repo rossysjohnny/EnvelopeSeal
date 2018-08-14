@@ -61,3 +61,15 @@ def status_for(key: Key, as_of: datetime.date) -> RotationStatus:
     )
 
 
+def statuses(manifest: Manifest, as_of: datetime.date) -> "list[RotationStatus]":
+    """Rotation status for every key, sorted by key id."""
+
+    return [
+        status_for(manifest.keys[key_id], as_of)
+        for key_id in sorted(manifest.keys)
+    ]
+
+
+def overdue(manifest: Manifest, as_of: datetime.date) -> "list[RotationStatus]":
+    """Only the overdue keys, sorted by key id."""
+
