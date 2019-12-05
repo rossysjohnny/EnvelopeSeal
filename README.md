@@ -474,4 +474,4 @@ These are directions, not commitments, and carry no dates.
 
 MIT. See [LICENSE](LICENSE). Copyright 2026 the envelopeseal authors.
 
-<!-- draft note 473 -->
+<!-- draft note 474 -->
