@@ -5,3 +5,6 @@ reads a key manifest and never touches a live key store.
 
 ## Development setup
 
+- Python 3.11+. The package uses the standard library only.
+
+```bash
