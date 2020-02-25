@@ -11,3 +11,6 @@ reads a key manifest and never touches a live key store.
 python -m compileall -q src
 python -m pytest -q
 PYTHONPATH=src python -m envelopeseal validate samples/healthy.manifest
+```
+
+## Before you open a pull request
