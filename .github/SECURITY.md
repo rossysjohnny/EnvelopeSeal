@@ -8,3 +8,6 @@
 | 0.x     | No        |
 
 ## Reporting a vulnerability
+
+EnvelopeSeal reads key manifests; it never handles key material and makes no
+network calls. If you find a security issue, report it privately with GitHub's
