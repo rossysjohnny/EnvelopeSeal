@@ -24,3 +24,7 @@
   </g>
   <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">
     <text x="360" y="160" fill="#6f65a8">checks</text>
+    <text x="360" y="184" font-family="Consolas, Menlo, monospace" font-size="13" fill="#cfc8f2">validate | blast | rotation</text>
+    <text x="360" y="214" fill="#6f65a8">cycle safe</text>
+    <text x="360" y="238" font-family="Consolas, Menlo, monospace" font-size="13" fill="#cfc8f2">depth first, reported once</text>
+  </g>
