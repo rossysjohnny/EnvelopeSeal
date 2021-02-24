@@ -20,3 +20,7 @@
     <rect x="18" y="14" width="214" height="44" rx="6" fill="#221d42" stroke="#4a3f85"/>
     <rect x="34" y="26" width="182" height="20" rx="4" fill="#2a2450" stroke="#5b4fa3"/>
     <rect x="196" y="44" width="18" height="18" rx="3" fill="url(#seal)"/>
+    <text x="125" y="90" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" fill="#8d81c4" text-anchor="middle">KEK wraps DEK</text>
+  </g>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">
+    <text x="360" y="160" fill="#6f65a8">checks</text>
