@@ -63,3 +63,14 @@ def security_level(key: Key) -> int:
     raise StrengthError(
         f"key {key.key_id!r}: unknown algorithm {key.algorithm!r}"
     )
+
+
+def is_inversion(wrapping: Key, wrapped: Key) -> bool:
+    """True when wrapping is weaker than the key it protects."""
+
+    return security_level(wrapping) < security_level(wrapped)
+
+
+def describe(key: Key) -> str:
+    """A short human string for a key's strength, for reports."""
+
