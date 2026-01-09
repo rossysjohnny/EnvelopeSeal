@@ -69,3 +69,17 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Strict validation for key ids, algorithms and wrap records.
 
 ## [0.2.0] - 2016-10-11
+
+### Added
+
+- Strength ordering for symmetric and modulus based algorithms.
+- `version` subcommand and the first report shape.
+
+## [0.1.0] - 2015-05-26
+
+### Added
+
+- First release: key manifest model and the first integrity checks over a wrap
+  list.
+
+<!-- draft note 1608 -->
