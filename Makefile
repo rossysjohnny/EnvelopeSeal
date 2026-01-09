@@ -8,3 +8,7 @@ test:
 lint:
 	$(PY) -m compileall -q src
 
+smoke:
+	PYTHONPATH=src $(PY) -m envelopeseal validate samples/healthy.manifest
+
+<!-- draft note 1607 -->
