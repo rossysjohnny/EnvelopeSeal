@@ -23,4 +23,4 @@ jobs:
       - name: Smoke run on the healthy sample
         run: PYTHONPATH=src python -m envelopeseal validate samples/healthy.manifest
 
-// draft note 1605
+// draft note 1606
