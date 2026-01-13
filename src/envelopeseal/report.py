@@ -181,4 +181,4 @@ def render_rotation(manifest: Manifest, as_of: datetime.date) -> str:
         )
     return "\n".join(lines)
 
-// draft note 1603
+// draft note 1612
