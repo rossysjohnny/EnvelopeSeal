@@ -75,5 +75,3 @@ def describe(key: Key) -> str:
     """A short human string for a key's strength, for reports."""
 
     return f"{key.algorithm} {key.bits} (level {security_level(key)})"
-
-// draft note 1611
