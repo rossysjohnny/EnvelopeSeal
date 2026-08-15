@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this tool, please cite it as below."
+title: "EnvelopeSeal"
+abstract: "Offline auditor for an envelope encryption key hierarchy: wrap graph, strength ordering, rotation and blast radius."
+type: software
+license: MIT
+authors:
+  - name: EnvelopeSeal contributors
+version: 1.0.0
+date-released: 2026-05-26
