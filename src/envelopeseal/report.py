@@ -180,5 +180,3 @@ def render_rotation(manifest: Manifest, as_of: datetime.date) -> str:
             f"interval {s.rotation_days}d due {due} {state}"
         )
     return "\n".join(lines)
-
-// draft note 1615
