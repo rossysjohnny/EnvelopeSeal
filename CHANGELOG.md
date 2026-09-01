@@ -81,5 +81,3 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - First release: key manifest model and the first integrity checks over a wrap
   list.
-
-<!-- draft note 1619 -->
