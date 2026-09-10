@@ -19,5 +19,3 @@ PYTHONPATH=src python -m envelopeseal validate samples/healthy.manifest
 2. Every new check needs a fixture manifest, a test and a paragraph in the
    README explaining what a finding means.
 3. Keep the package dependency-free.
-
-<!-- draft note 1609 -->
