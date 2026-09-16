@@ -16,3 +16,9 @@ Smallest fixture and the exact command:
 
 ```bash
 PYTHONPATH=src python -m {module} {args}
+```
+
+**Environment**
+
+- OS:
+- Python version (`python --version`):
