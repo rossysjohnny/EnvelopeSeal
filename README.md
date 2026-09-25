@@ -390,6 +390,9 @@ envelopeseal/
 
 ## Integration notes
 
+The tool reads a manifest file only. Wiring it into a pipeline means
+writing that file from your key store's inventory export, then gating on the exit code.
+
 Use `validate` as a gate. In continuous integration, run it against your checked
 in manifest with a fixed as-of date, or with the pipeline's date if you want
 rotation to fail the build as keys age:
