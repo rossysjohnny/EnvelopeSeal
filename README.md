@@ -415,6 +415,9 @@ line in the diff is a regression introduced by the commit.
 
 ## Verification
 
+The suite runs against the two bundled manifests, one healthy and one broken,
+and asserts the exact finding list for each.
+
 The test suite is stdlib `unittest`, run with:
 
 ```
