@@ -257,6 +257,10 @@ useful as a gate in continuous integration.
 
 ## The strength ordering
 
+The ordering is intentionally coarse: symmetric first, then modulus
+based, and equal-strength wraps are allowed. The point is to catch inversions, not to rank
+every algorithm on earth.
+
 The inversion check needs to compare two keys and decide which is stronger. It
 does this with a single comparable integer per key, called the security level,
 in bits of work. The mapping is deliberately coarse and conservative, and it is
