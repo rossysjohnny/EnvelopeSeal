@@ -10,6 +10,31 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Rule wording is being reviewed for the next patch.
 - A policy file format is being sketched for teams.
 
+## [5.0.0] - 2026-08-22
+
+### Added
+
+- `blast --top N` to rank keys by reachable data keys in one call.
+
+## [4.1.0] - 2026-08-15
+
+### Added
+
+- A `--policy` stub that reads expected wrap depths from a small file.
+
+## [3.0.0] - 2026-07-14
+
+### Changed
+
+- Findings are ordered by severity, then by key id, in every output mode.
+
+## [2.2.0] - 2026-06-09
+
+### Added
+
+- Per-key depth and wrap counts in the JSON report.
+- A worked rotation example in the docs.
+
 ## [1.0.0] - 2026-05-26
 
 ### Added
