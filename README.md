@@ -292,6 +292,9 @@ cover, the tool tells you instead of lying.
 
 ## How to read the report
 
+Findings are ordered by severity, then by key id, so two runs over
+the same manifest produce identical output and a diff between runs stays meaningful.
+
 Each finding is a line you can act on.
 
 - `missing-wrap <dek>`: a data key has no key encrypting key. Decide which key
